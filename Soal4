@@ -18,8 +18,10 @@ begin
     // h := 5/9*(s-32)
     // else if u = 3 then
     // h := s + 273
+    // else if u = 4 then
+    // h := s - 273
     // else
-    // h := s - 273;
+    // h := 0;
     // writeln('Nilai perubahan suhu adalah : ',h:2:2);
     case u of
         1 : h := 32 + (9/5*s);

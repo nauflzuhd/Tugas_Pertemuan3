@@ -1,0 +1,18 @@
+uses crt;
+var
+    c : integer;
+begin
+    clrscr;
+    writeln(' Masukkan dalam celcius');
+    write('Masukkan berapa derajat suhu saat ini : ');readln(c);
+    if (c < 0) then
+    writeln('"Cuaca sangat dingin, jangan lupa pakai jaket tebal!"')
+    else if (c <= 15) then
+    writeln('"Cuaca dingin, pakai jaket ya!"')
+    else if (c <= 25) then
+    writeln('"Cuaca nyaman, cocok untuk jalan jalan."')
+    else if (c <= 35) then
+    writeln('"Cuaca hangat, tetap terhidrasi!"')
+    else
+    writeln('"Cuaca sangat panas, hindari panas matahari langsung!"');
+end.

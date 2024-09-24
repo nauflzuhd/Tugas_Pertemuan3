@@ -1,0 +1,31 @@
+uses crt;
+var
+    u   : integer;
+    s,h : real;
+begin
+    clrscr;
+    writeln('|======================================================|');
+    writeln('|Ketik 1 jika anda ingin mengubah Celcius ke Fahrenheit|');
+    writeln('|Ketik 2 jika anda ingin mengubah Fahrenheit ke Celcius|');
+    writeln('|Ketik 3 jika anda ingin mengubah Celcius ke Kelvin    |');
+    writeln('|Ketik 4 jika anda ingin mengubah Kelvin ke Celcius    |');
+    writeln('|======================================================|');
+    write('Masukkan jenis operasi yang kamu inginkan : ');readln(u);
+    write('Masukkan nilai suhu yang ingin kamu ubah  : ');readln(s);
+    // if  u = 1 then
+    // h := 32 + (9/5*s)
+    // else if u = 2 then
+    // h := 5/9*(s-32)
+    // else if u = 3 then
+    // h := s + 273
+    // else
+    // h := s - 273;
+    // writeln('Nilai perubahan suhu adalah : ',h:2:2);
+    case u of
+        1 : h := 32 + (9/5*s);
+        2 : h := 5/9*(s-32);
+        3 : h := s + 273;
+        4 : h := s - 273;
+    end;
+    writeln('Nilai perubahan suhu adalah : ',h:2:2);
+end.

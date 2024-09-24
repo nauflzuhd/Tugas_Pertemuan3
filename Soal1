@@ -1,0 +1,17 @@
+uses crt;
+var
+    total,d : real;
+begin
+    clrscr;
+    writeln('======Diskon Belanja======');
+    write  ('Masukkan total belanjaan : ');readln(total);
+    if (total >= 1000000) then
+    d:=total*(70/100)
+    else if (total >= 500000) then
+    d:=total*(80/100)
+    else if (total >= 100000) then
+    d:=total*(90/100)
+    else
+    d:=total;
+    writeln('Harga yang kamu bayar adalah : ',d:2:2);
+end.

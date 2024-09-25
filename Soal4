@@ -21,13 +21,15 @@ begin
     // else if u = 4 then
     // h := s - 273
     // else
-    // h := 0;
-    // writeln('Nilai perubahan suhu adalah : ',h:2:2);
+    // writeln('Tidak Valid');
+    // writeln('Nilai perubahan suhu adalah : ',h:3:2);
     case u of
         1 : h := 32 + (9/5*s);
         2 : h := 5/9*(s-32);
         3 : h := s + 273;
         4 : h := s - 273;
+    else
+        writeln('Tidak Valid');
     end;
-    writeln('Nilai perubahan suhu adalah : ',h:2:2);
+    writeln('Nilai perubahan suhu adalah : ',h:3:2);
 end.

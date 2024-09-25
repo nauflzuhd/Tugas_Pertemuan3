@@ -10,14 +10,16 @@ begin
     writeln('|Ketik 3 jika anda ingin menggunakan operasi x|');
     writeln('|Ketik 4 jika anda ingin menggunakan operasi /|');
     writeln('|=============================================|'); 
-    write('Masukkan bilangan pertama          : ');readln(bil1);
     write('Masukkan operasi yang diinginkan   : ');readln(op);
+    write('Masukkan bilangan pertama          : ');readln(bil1);
     write('Masukkan bilangan kedua            : ');readln(bil2);
     case op of
         1 : h := bil1+bil2;
         2 : h := bil1-bil2;
         3 : h := bil1*bil2;
         4 : h := bil1/bil2;
+        else
+        h := 0
         end;
     writeln('Hasilnya adalah : ',h:2:2);
 end.
